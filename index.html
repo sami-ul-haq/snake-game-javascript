@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Snake Game | Sami ul Haq</title>
-    <!-- FA -->
-    <script
-      src="https://kit.fontawesome.com/9e2213edf0.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <main>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake Game | Sami ul Haq</title>
+  <!-- FA -->
+  <script src="https://kit.fontawesome.com/9e2213edf0.js" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <main>
+
+    <div class="right-content">
+      <h1>Snake Game</h1>
+      <p>Made By <i> SAMI </i></p>
+      <h3>How To Play?</h3>
+      <p>Press Up, Down, Left & Right Arrow Key To Play</p>
+
+      <button id="play-agian">
+        <i class="fas fa-redo-alt"></i>Play Again
+      </button>
+    </div>
+
+    <div class="left-content">
       <canvas id="snake" width="608" height="608"></canvas>
-      <div class="left-content">
-        <h1>Snake Game</h1>
-        <p>Made By <i> SAMI </i></p>
-        <h3>How To Play?</h3>
-        <p>Press Up, Down, Left & Right Arrow Key To Play</p>
+    </div>
+  </main>
 
-        <button id="play-agian">
-          <i class="fas fa-redo-alt"></i>Play Again
-        </button>
-      </div>
-    </main>
+  <!-- JS -->
+  <script src="./js/script.js"></script>
+</body>
 
-    <!-- JS -->
-    <script src="./js/script.js"></script>
-  </body>
 </html>

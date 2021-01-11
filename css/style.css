@@ -6,35 +6,63 @@
 }
 
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px;
+  position: relative;
 }
 
 .left-content {
-  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
+.right-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
 h3 {
-  margin-top: 20px;
+  margin-top: 10px;
+}
+
+p {
+  margin: 10px 0;
+  text-align: center;
 }
 
 #play-agian {
   padding: 10px;
+  border: none;
   margin: 20px 0;
+  margin-top: 5px;
   text-transform: uppercase;
   cursor: pointer;
   outline: none;
+  color: white;
+  background-color: yellowgreen;
+}
+
+#play-agian:hover {
+  background-color: rgb(124, 182, 9);
 }
 
 #play-agian i {
   margin-right: 10px;
 }
 
-@media only screen and (max-width: 764px) {
-  main {
-    padding: 0;
-    flex-direction: column;
+@media only screen and (max-width: 600px) {
+  canvas#snake {
+    padding: 0 5px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: ;
   }
 }
